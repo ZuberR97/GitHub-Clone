@@ -1,4 +1,6 @@
-﻿<div class="wrapper">
+﻿@model User;
+
+<div class="wrapper">
     <div class="topbar">
         <img style="margin-left: 10%;" src="https://onlinejpgtools.com/images/examples-onlinejpgtools/github-logo-transparent-bg.gif" alt="HubGitCat">
         <a class="dropdown" href="">Why HubGit?</a>
@@ -12,7 +14,32 @@
         <a href="">Sign in</a>
         <a href="">Sign up</a>
     </div>
-    <div class="signupbox">
-        <h2>Sign Up</h2>
+    <div class="signupsection">
+        <div class="SignUpBox">
+            <form asp-action="SignUp" asp-controller="Home" method="POST">
+                <h5><label for="UserName">Username</label></h5>
+                <input style="background-color: rgb(232, 240, 254);" asp-for="UserName" type="text"><br>
+                <span asp-validation-for="UserName"></span>
+                <h5><label for="Email">Email</label></h5>
+                <input asp-for="Email" type="text"><br>
+                <span asp-validation-for="Email"></span>
+                <h5><label for="Password">Password</label></h5>
+                <input style="background-color: rgb(232, 240, 254);" asp-for="Password" type="password"><br>
+                <!-- Below portion needs work -->
+                @{
+                    if(ViewData.ModelState.IsValid)
+                    {
+                        <p style="color: green;">Make sure your password is at least 8 characters long.</p>
+                    }
+                    else
+                    {
+                        <p style="color: red;">Make sure your password is at least 8 characters long.</p>
+                    }
+                }
+                <!-- <span asp-validation-for="Password"></span><br> -->
+                <button type="submit">Sign up for HubGit</button>
+            </form>
+        </div>
     </div>
+    <p style="font-size: 10px;">HubGit is not meant for any commercial purposes, only for personal coding improvement. Thank you.</p>
 </div>
