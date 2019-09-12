@@ -18,7 +18,14 @@ namespace GithubClone.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View("Index");
+            if(HttpContext.Session.GetInt32("LoggedIn").HasValue)
+            {
+                return View("Home");
+            }
+            else
+            {
+                return View("Index");
+            }
         }
 
         [HttpPost("SignUp")]
@@ -45,13 +52,25 @@ namespace GithubClone.Controllers
                 DbContext.Add(newuser);
                 DbContext.SaveChanges();
                 int userId = newuser.UserId;
-                HttpContext.Session.SetInt32("loggeduser", userId);
-                return RedirectToAction("Dashboard", new{userId = userId});
+                HttpContext.Session.SetInt32("LoggedIn", userId);
+                return RedirectToAction("Dashboard", new{userId = userId}); //needs to change
             }
             else
             {
                 return View("Index");
             }
+        }
+
+        [HttpGet("Login")]
+        public IActionResult Login()
+        {
+            return View("Login");
+        }
+
+        [HttpPost("LoginProcess")]
+        public IActionResult LoginProcess(User user) //needs work
+        {
+            return RedirectToAction("Index");
         }
 
     }

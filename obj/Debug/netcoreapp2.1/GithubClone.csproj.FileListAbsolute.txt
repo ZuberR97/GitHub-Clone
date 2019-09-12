@@ -24,3 +24,4 @@ C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcorea
 C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\GithubClone.dll
 C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\GithubClone.pdb
 C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\GithubClone.csproj.CopyComplete
+C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
