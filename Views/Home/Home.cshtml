@@ -1,4 +1,31 @@
-<h1>Welcome user @ViewBag.CurrentUser.UserName</h1>
-<form asp-action="Logout" asp-controller="Home" method="post">
-    <button type="submit">Logout</button>
-</form>
+<div class="wrapper">
+    <div class="TopBarSignedIn" >
+        <img src="https://onlinejpgtools.com/images/examples-onlinejpgtools/github-logo-transparent-bg.gif" alt="HubGitCat">
+        <form style="display: inline-block;" asp-action="" asp-controller="Home" method="POST"> <!-- likely needs change -->
+            <input type="text" value="Search or jump to...">
+        </form>
+        <a href="">Pull requests</a>
+        <a href="">Issues</a>
+        <a href="">Marketplace</a>
+        <a href="">Explore</a>
+        <a href=""><img style="width:20px; margin-left:47%;" src="https://camo.githubusercontent.com/9ae81219be0009a3b727e03e8ae1f009ec632d24/68747470733a2f2f696d6167652e666c617469636f6e2e636f6d2f69636f6e732f7376672f36312f36313037332e737667" alt="bell"></a>
+        <a class="ClickDropdown" href=""><img style="width:20px;" src="https://i.ya-webdesign.com/images/png-white-plus-sign-6.png" alt="plus"></a>
+        <a class="ClickDropdown" href=""><img style="width:20px;" src="https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg" alt=""></a>
+    </div>
+    <div class="Repositories">
+        <h5 style="display: inline-block;">Repositories</h5>
+        <a href="/NewRepo"><button><img src="https://cdn.imgbin.com/22/15/7/imgbin-repository-github-computer-icons-github-6vAEM7F7qce3NEvFibdXV90Dh.jpg" alt=""> New</button></a>
+        <form asp-action="" asp-controller="Home" method="POST"> <!-- likely needs change -->
+            <input type="text" value="Find a repository...">
+        </form>
+        <!-- need foreach loop for repositories the user has contributed to -->
+    </div>
+    <div class="FollowedBox">
+        <div class="FollowedNews">
+            <!-- need foreach loop for following-user activity -->
+        </div>
+        <div class="ExploreRepos">
+            <!-- need foreach loop for 3(maybe 5) random repositories from anyone -->
+        </div>
+    </div>
+</div>

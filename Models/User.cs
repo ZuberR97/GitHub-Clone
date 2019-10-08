@@ -28,7 +28,9 @@ namespace GithubClone.Models
 
     public class Login
     {
+        [Required]
         public string UNEInput {get;set;}
+        [Required]
         public string Password {get;set;}
     }
 }

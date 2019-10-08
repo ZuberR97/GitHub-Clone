@@ -46,6 +46,50 @@ body{
     color: #8d8d8d;
 }
 
+.topbar input{
+    width: 230px;
+    height: 35px;
+    background-color: hsla(0,0%,100%,.125);
+    border: none;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.521);
+    padding-left: 5%;
+}
+
+.TopBarSignedIn{
+    width: 100%;
+    height: 65px;
+    padding-top: 17.5px;
+    background-color: #24292e;
+}
+
+.TopBarSignedIn img{
+    width: 4%;
+}
+
+.TopBarSignedIn a{
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+    margin-left: 13px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.TopBarSignedIn a:hover{
+    color: #8d8d8d;
+}
+
+.TopBarSignedIn input{
+    width: 300px!important;
+    height: 28px!important;
+    background-color: hsla(0,0%,100%,.125);
+    border: none;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.521);
+    padding-left: 5%;
+}
+
 /* Sign Up page ********************************************************/
 
 .signupsection{
@@ -120,4 +164,47 @@ body{
     margin-top: 1.5%;
     background-color: #fff;
     border-radius: 5px;
+}
+
+/* Home Page ********************************************************/
+
+.Repositories{
+    width: 22.7%;
+    height: 1000px;
+    display: inline-block;
+    vertical-align: top;
+    
+    padding: 2%;
+}
+
+.Repositories button{
+    display: inline-block;
+    width: 60px;
+    height: 27px;
+    margin-left: 49.8%;
+    background-image: linear-gradient(#25c94b, #25a543)   ;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(27,31,35,.2);
+}
+
+.Repositories img{
+    width: 10px;
+}
+
+.Repositories input{
+    width: 100%;
+    height: 35px;
+    margin-top: 2%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.FollowedBox{
+    width: 76.7%;
+    height: 1000px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f5f5f5;
+    border-left: 1px solid lightgray;
 }
