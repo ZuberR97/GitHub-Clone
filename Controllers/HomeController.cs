@@ -37,6 +37,12 @@ namespace GithubClone.Controllers
             }
         }
 
+        [HttpGet("none")]
+        public IActionResult None()
+        {
+            return View("NotComplete");
+        }
+
         [HttpPost("SignUp")]
         public IActionResult SignUp(User newuser)
         {
@@ -144,6 +150,27 @@ namespace GithubClone.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        [HttpGet("new")]
+        public IActionResult NewRepo()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") != null)
+            {
+                User CurrentUser = DbContext.Users.FirstOrDefault(uid => uid.UserId == HttpContext.Session.GetInt32("LoggedIn"));
+                ViewBag.CurrentUser = CurrentUser;
+                return View("NewRepository");
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
+        // [HttpPost("newRepoProcess")]
+        // public IActionResult NewRepoProcess(Respository newRepo)
+        // {
+
+        // }
 
     }
 }

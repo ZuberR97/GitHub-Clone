@@ -2887,6 +2887,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\NewRepository.cshtml",
+      "TargetPath": "Views\\Home\\NewRepository.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -2902,8 +2907,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\TopBarPartial.cshtml",
+      "TargetPath": "Views\\Home\\TopBarPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Home.cshtml",
       "TargetPath": "Views\\Home\\Home.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\NotComplete.cshtml",
+      "TargetPath": "Views\\Home\\NotComplete.cshtml",
       "FileKind": "mvc"
     }
   ],

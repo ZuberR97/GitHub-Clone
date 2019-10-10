@@ -1,0 +1,38 @@
+@model Repository;
+
+<div class="wrapper">
+    <partial name="TopBarPartial" view-data="ViewData"/>
+    <div class="NewRepoForm">
+        <div class="NewRepoFormChunk">
+            <h3>Create a new repository</h3>
+            <p>A repository contains all project files, including the revision history. Already have a project repository elsewhere?</p>
+            <a href="/none">Import a repository</a>
+        </div>
+        <form asp-action="NewRepoProcess" asp-controller="Home" method="POST">
+            <div class="NewRepoFormChunk">
+                <div style="display:inline-block;">
+                    <label for="Owner">Owner</label><br>
+                    <select name="Owner" id="">
+                        <option style="width:auto;" value="@ViewBag.CurrentUser">@ViewBag.CurrentUser.UserName</option>
+                    </select>
+                    <span style="font-size:20px;"> / </span>
+                </div>
+                <div style="display:inline-block;">
+                    <label for="Name">Repository name <span style="color:red;">*</span></label><br>
+                    <input style="width:250px;" type="text" asp-for="Name">
+                </div>
+                <p>Great repository names are short and memorable. Need inspiration? How about ?</p>
+                <label for="Description">Description (Optional)</label><br>
+                <input style="width:100%;" type="text" asp-for="Description">
+            </div>
+            <div class="NewRepoFormChunk">
+                <input class="NewRepoFormRadio" type="radio" asp-for="IsPublic" value="true">Public<br>
+                <input class="NewRepoFormRadio" type="radio" asp-for="IsPublic" value="false">Private
+            </div>
+            <div class="NewRepoFormChunk">
+                <p>Skip this step if you're importing an existing repository.</p>
+            </div>
+            <button type="submit">Create repository</button>
+        </form>
+    </div>
+</div>

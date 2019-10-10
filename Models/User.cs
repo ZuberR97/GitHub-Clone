@@ -23,13 +23,14 @@ namespace GithubClone.Models
 
         [MaxLength(255)]
         public string Bio {get;set;}
-        public Boolean IsTrue {get;set;} //should be removed
+        
+        public List<Repository> MyRepositories {get;set;}
     }
 
     public class Login
     {
         [Required]
-        public string UNEInput {get;set;}
+        public string UNEInput {get;set;}  //UNEInput stands for UserName/Email Input
         [Required]
         public string Password {get;set;}
     }
