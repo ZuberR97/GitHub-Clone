@@ -30,3 +30,4 @@ C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcorea
 C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\TopBarPartial.cshtml.g.cs
 C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\NewRepository.cshtml.g.cs
 C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\NotComplete.cshtml.g.cs
+C:\Users\ryan\Desktop\CodingDojo\PersonalProjects\GithubClone\obj\Debug\netcoreapp2.1\Razor\Views\Home\RepoCode.cshtml.g.cs

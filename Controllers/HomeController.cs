@@ -166,11 +166,42 @@ namespace GithubClone.Controllers
             }
         }
 
-        // [HttpPost("newRepoProcess")]
-        // public IActionResult NewRepoProcess(Respository newRepo)
-        // {
+        [HttpPost("newRepoProcess")]
+        public IActionResult NewRepoProcess(Repository newRepo)
+        {
+            if(ModelState.IsValid)
+            {
+                int? LoggedId = HttpContext.Session.GetInt32("LoggedIn");
+                User LoggedUser = DbContext.Users.FirstOrDefault(uid => uid.UserId == LoggedId);
+                DbContext.Repositories.Add(newRepo);
+                DbContext.SaveChanges();
+                return RedirectToAction("Repository", new{username = LoggedUser.UserName, repositoryName = newRepo.Name});
+            }
+            else
+            {
+                return View("NewRepository");
+            }
+        }
 
-        // }
+        [HttpGet("{username}/{repositoryName}")]
+        public IActionResult Repository(Repository Repo, string username, string repositoryName)
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                int? LoggedId = HttpContext.Session.GetInt32("LoggedIn");
+                User LoggedUser = DbContext.Users.FirstOrDefault(uid => uid.UserId == LoggedId);
+                ViewBag.CurrentUser = LoggedUser;
+                Repository CurrentRepo = DbContext.Repositories
+                    .Where(oid => oid.UserId == LoggedId)
+                    .FirstOrDefault(rn => rn.Name == repositoryName);
+                ViewBag.CurrentRepo = CurrentRepo;
+                return View("RepoCode");
+            }
+        }
 
     }
 }

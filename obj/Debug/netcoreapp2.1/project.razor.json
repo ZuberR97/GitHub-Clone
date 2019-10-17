@@ -2882,6 +2882,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\RepoCode.cshtml",
+      "TargetPath": "Views\\Home\\RepoCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

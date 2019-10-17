@@ -11,9 +11,9 @@
         <form asp-action="NewRepoProcess" asp-controller="Home" method="POST">
             <div class="NewRepoFormChunk">
                 <div style="display:inline-block;">
-                    <label for="Owner">Owner</label><br>
-                    <select name="Owner" id="">
-                        <option style="width:auto;" value="@ViewBag.CurrentUser">@ViewBag.CurrentUser.UserName</option>
+                    <label for="UserId">Owner</label><br>
+                    <select name="UserId" id="">
+                        <option style="width:auto;" value="@ViewBag.CurrentUser.UserId">@ViewBag.CurrentUser.UserName</option>
                     </select>
                     <span style="font-size:20px;"> / </span>
                 </div>
@@ -21,8 +21,8 @@
                     <label for="Name">Repository name <span style="color:red;">*</span></label><br>
                     <input style="width:250px;" type="text" asp-for="Name">
                 </div>
-                <p>Great repository names are short and memorable. Need inspiration? How about ?</p>
-                <label for="Description">Description (Optional)</label><br>
+                <p>Great repository names are short and memorable. Need inspiration? How about ?</p> <!-- build a dictionary with many strings then run it through a random selector and print the option at the end -->
+                <label for="Description">Description (optional)</label><br>
                 <input style="width:100%;" type="text" asp-for="Description">
             </div>
             <div class="NewRepoFormChunk">

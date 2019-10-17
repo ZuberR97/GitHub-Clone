@@ -18,6 +18,6 @@ namespace GithubClone.Models
         [Required]
         public Boolean IsPublic {get;set;}
 
-        public int UserID {get;set;}
+        public int UserId {get;set;}
     }
 }
