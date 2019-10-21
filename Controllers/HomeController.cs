@@ -151,6 +151,21 @@ namespace GithubClone.Controllers
             }
         }
 
+        [HttpGet("{username}")]
+        public IActionResult AccountPage(string username)
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") != null)
+            {
+                User CurrentUser = DbContext.Users.FirstOrDefault(uid => uid.UserId == HttpContext.Session.GetInt32("LoggedIn"));
+                ViewBag.CurrentUser = CurrentUser;
+                return View("AccountPage");
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
         [HttpGet("new")]
         public IActionResult NewRepo()
         {

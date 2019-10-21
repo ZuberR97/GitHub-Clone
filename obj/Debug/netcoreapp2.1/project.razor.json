@@ -2877,6 +2877,11 @@
   "RootNamespace": "GithubClone",
   "Documents": [
     {
+      "FilePath": "Views\\Home\\AccountPage.cshtml",
+      "TargetPath": "Views\\Home\\AccountPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
