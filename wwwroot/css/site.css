@@ -111,19 +111,32 @@ body{
     display: none;
     position: absolute;
     background-color: white;
+    color: #24292e;
     right: 0;
     left: auto;
     min-width: 160px;
     overflow: auto;
+    padding: 5px 0px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 100;
     border-radius: 5px;
 }
 
 .dropdown-content a{
-    color: black;
+    color: #24292e;
+    font-weight: normal;
     text-decoration: none;
     display: block;
+    padding: 3% 10%;
+    margin: 0px;
+    transition: 0s;
+}
+
+.dropdown-content a:hover{
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #0366d6;
 }
 
 .show {

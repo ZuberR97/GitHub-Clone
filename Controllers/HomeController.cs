@@ -29,6 +29,8 @@ namespace GithubClone.Controllers
                 int? Uid = HttpContext.Session.GetInt32("LoggedIn");
                 User Current = DbContext.Users.FirstOrDefault(uid => uid.UserId == Uid);
                 ViewBag.CurrentUser = Current;
+                List<Repository> allRepos = DbContext.Repositories.Where(uid => uid.UserId == Uid).ToList();
+                ViewBag.AllRepos = allRepos;
                 return View("Home");
             }
             else

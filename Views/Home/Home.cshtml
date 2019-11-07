@@ -6,7 +6,15 @@
         <form asp-action="" asp-controller="Home" method="POST"> <!-- likely needs change -->
             <input type="text" placeholder="Find a repository...">
         </form>
-        <!-- need foreach loop for repositories the user has contributed to -->
+        @{
+            foreach(Repository repo in ViewBag.AllRepos)
+            {
+                <a href="/@ViewBag.CurrentUser.UserName/@repo.Name">
+                    <img src="https://cdn.imgbin.com/22/15/7/imgbin-repository-github-computer-icons-github-6vAEM7F7qce3NEvFibdXV90Dh.jpg" alt="">
+                    @ViewBag.CurrentUser.UserName / @repo.Name
+                </a><br>
+            }
+        }
     </div>
     <div class="FollowedBox">
         <div class="FollowedNews">

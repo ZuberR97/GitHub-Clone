@@ -1,5 +1,5 @@
 <div class="TopBarSignedIn">
-    <img src="https://onlinejpgtools.com/images/examples-onlinejpgtools/github-logo-transparent-bg.gif" alt="HubGitCatopus">
+    <img src="https://onlinejpgtools.com/images/examples-onlinejpgtools/github-logo-transparent-bg.gif" alt="Catopus">
     <form style="display: inline-block;" asp-action="" asp-controller="Home" method="POST"> <!-- likely needs change -->
         <input type="text" placeholder="Search or jump to...">
     </form>
@@ -21,7 +21,7 @@
     <div class="Dropdown">
         <button class="DropButton" onclick="Adropdown()"><img style="width:20px;" src="https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg" alt="">▼</button>
         <div id="AccountDropdown" class="dropdown-content">
-            <a href="">Signed in as </a>
+            <a href="">Signed in as @ViewBag.CurrentUser.UserName</a>
             <a href="">New repository</a>
             <a href="">Import repository</a>
             <a href="">New gist</a>
