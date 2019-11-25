@@ -2785,7 +2785,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
-        "Documentation": "\n            <summary>\n            A tag helper for prerendering JavaScript applications on the server.\n            </summary>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -2814,7 +2814,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            Specifies the path to the JavaScript module containing prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ModuleName"
@@ -2828,7 +2828,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            If set, specifies the name of the CommonJS export that is the prerendering function to execute.\n            If not set, the JavaScript module's default CommonJS export must itself be the prerendering function.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "ExportName"
@@ -2842,7 +2842,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            An optional JSON-serializable parameter to be supplied to the prerendering code.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "CustomDataParameter"
@@ -2856,7 +2856,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The maximum duration to wait for prerendering to complete.\n            </summary>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "TimeoutMillisecondsParameter"
@@ -2877,58 +2877,58 @@
   "RootNamespace": "GithubClone",
   "Documents": [
     {
-      "FilePath": "Views\\Home\\AccountPage.cshtml",
-      "TargetPath": "Views\\Home\\AccountPage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Home\\RepoCode.cshtml",
-      "TargetPath": "Views\\Home\\RepoCode.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\NewRepository.cshtml",
-      "TargetPath": "Views\\Home\\NewRepository.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Home\\Login.cshtml",
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\Login.cshtml",
       "TargetPath": "Views\\Home\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\TopBarPartial.cshtml",
-      "TargetPath": "Views\\Home\\TopBarPartial.cshtml",
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\NotComplete.cshtml",
+      "TargetPath": "Views\\Home\\NotComplete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\Home.cshtml",
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\Home.cshtml",
       "TargetPath": "Views\\Home\\Home.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Home\\NotComplete.cshtml",
-      "TargetPath": "Views\\Home\\NotComplete.cshtml",
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\NewRepository.cshtml",
+      "TargetPath": "Views\\Home\\NewRepository.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\AccountPage.cshtml",
+      "TargetPath": "Views\\Home\\AccountPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\RepoCode.cshtml",
+      "TargetPath": "Views\\Home\\RepoCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\TopBarPartial.cshtml",
+      "TargetPath": "Views\\Home\\TopBarPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

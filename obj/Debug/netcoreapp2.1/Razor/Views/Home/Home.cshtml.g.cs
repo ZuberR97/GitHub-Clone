@@ -59,7 +59,7 @@ using GithubClone.Models;
             WriteLiteral("<div class=\"wrapper\">\r\n    ");
             EndContext();
             BeginContext(27, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d39d452e542640e9acbf18952fc7c497", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ca6788e4f19342ffb320f08c55acb8bd", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -88,7 +88,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.ViewData = ViewData;
         ");
             EndContext();
             BeginContext(359, 170, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7b98e5eb69f463f97d576b2eefef5aa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbddaf2afbeb4c8c8e39ace0ee1e6367", async() => {
                 BeginContext(415, 107, true);
                 WriteLiteral(" <!-- likely needs change -->\r\n            <input type=\"text\" placeholder=\"Find a repository...\">\r\n        ");
                 EndContext();

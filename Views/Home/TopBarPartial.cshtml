@@ -11,7 +11,7 @@
     <div class="Dropdown">
         <button class="DropButton" onclick="Ndropdown()"><img style="width:20px;" src="https://i.ya-webdesign.com/images/png-white-plus-sign-6.png" alt="plus">▼</button>
         <div id="NewDropdown" class="dropdown-content">
-            <a href="">New repository</a>
+            <a href="/new">New repository</a>
             <a href="">Import repository</a>
             <a href="">New gist</a>
             <a href="">New organization</a>
@@ -21,12 +21,16 @@
     <div class="Dropdown">
         <button class="DropButton" onclick="Adropdown()"><img style="width:20px;" src="https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg" alt="">▼</button>
         <div id="AccountDropdown" class="dropdown-content">
-            <a href="">Signed in as @ViewBag.CurrentUser.UserName</a>
-            <a href="">New repository</a>
-            <a href="">Import repository</a>
-            <a href="">New gist</a>
-            <a href="">New organization</a>
-            <a href="">New project</a>
+            <a href="/@ViewBag.CurrentUser.UserName">Signed in as @ViewBag.CurrentUser.UserName</a>
+            <a href="/@ViewBag.CurrentUser.UserName">Your profile</a>
+            <a href="/@ViewBag.CurrentUser.UserName/repositories">Your repositories</a>
+            <a href="">Your projects</a>
+            <a href="">Your stars</a>
+            <a href="">Your gists</a>
+            <a href="">Feature preview</a>
+            <a href="">Help</a>
+            <a href="">Settings</a>
+            <a href="">Sign out</a>
         </div>
     </div>
 </div>

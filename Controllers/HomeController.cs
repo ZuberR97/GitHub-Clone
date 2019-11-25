@@ -168,6 +168,7 @@ namespace GithubClone.Controllers
             }
         }
 
+        //paths that deal with new and existing repositories
         [HttpGet("new")]
         public IActionResult NewRepo()
         {
@@ -219,6 +220,10 @@ namespace GithubClone.Controllers
                 return View("RepoCode");
             }
         }
+
+        //paths dealing with the users account
+        // [HttpGet("{username}")]
+        // public IActionResult Account
 
     }
 }
