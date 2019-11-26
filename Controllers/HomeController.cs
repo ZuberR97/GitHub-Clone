@@ -10,6 +10,21 @@ using Microsoft.AspNetCore.Identity;
 using GithubClone.Models;
 using Microsoft.Extensions.Logging;
 
+/*  
+To Do List:
+1. Perfect the css and detail of each page
+2. Create and complete each page for individual repositories
+3. Create and complete each page for users account
+4. Make it so users can at least type their own code into the repositories they make
+5. Attempt to implement the ability for users to upload code to their repository remotely
+6. Use JS to make the topbar partial's search bar work like on github
+7. Create a twitter style follower feature for following and being followed
+8. Put all needed info into the home page (can't be done until followers are made)
+9. Pull requests/actions
+10. Create ability to clone code onto your machine
+11. Write more tasks...
+*/
+
 namespace GithubClone.Controllers
 {
     public class HomeController : Controller
@@ -153,6 +168,7 @@ namespace GithubClone.Controllers
             }
         }
 
+        //paths dealing with users account
         [HttpGet("{username}")]
         public IActionResult AccountPage(string username)
         {
@@ -168,7 +184,7 @@ namespace GithubClone.Controllers
             }
         }
 
-        //paths that deal with new and existing repositories
+        //paths that deal with new repositories
         [HttpGet("new")]
         public IActionResult NewRepo()
         {
@@ -201,6 +217,7 @@ namespace GithubClone.Controllers
             }
         }
 
+        //paths that deal with existing repositories
         [HttpGet("{username}/{repositoryName}")]
         public IActionResult Repository(Repository Repo, string username, string repositoryName)
         {
@@ -221,9 +238,109 @@ namespace GithubClone.Controllers
             }
         }
 
-        //paths dealing with the users account
-        // [HttpGet("{username}")]
-        // public IActionResult Account
+        [HttpGet("{username}/{repositoryName}/issues")]
+        public IActionResult RepositoryIssues()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/pulls")]
+        public IActionResult RepositoryPullRequests()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/actions/new")]
+        public IActionResult RepositoryActions()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/projects")]
+        public IActionResult RepositoryProjects()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/wiki")]
+        public IActionResult RepositoryWiki()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/network/alerts")]
+        public IActionResult RepositorySecurity()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/pulse")]
+        public IActionResult RepositoryInsights()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
+
+        [HttpGet("{username}/{repositoryName}/settings")]
+        public IActionResult RepositorySettings()
+        {
+            if(HttpContext.Session.GetInt32("LoggedIn") == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("");
+            }
+        }
 
     }
 }

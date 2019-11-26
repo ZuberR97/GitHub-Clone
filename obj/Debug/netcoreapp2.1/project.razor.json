@@ -2897,6 +2897,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Home\\RepoMenuPartial.cshtml",
+      "TargetPath": "Views\\Home\\RepoMenuPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ryan\\Desktop\\CodingDojo\\PersonalProjects\\GithubClone\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
